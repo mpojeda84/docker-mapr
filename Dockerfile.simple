@@ -1,0 +1,4 @@
+FROM openjdk:8
+ADD target/my-hello-app.jar my-hello-app.jar
+EXPOSE 8085
+ENTRYPOINT ["java", "-jar", "my-hello-app.jar"]
